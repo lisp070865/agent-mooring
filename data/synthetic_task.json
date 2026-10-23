@@ -1,0 +1,34 @@
+{
+  "schema": "awake_kit_synthetic_task_v1",
+  "data_class": "SYNTHETIC_ONLY",
+  "_warning": "Every identifier in this file is invented for documentation. None of it refers to a real mailbox, session, task, run, message, thread, or account.",
+  "identity": {
+    "run_id": "RUN-SYNTHETIC-0001",
+    "task_id": "TASK-SYNTHETIC-0001",
+    "holder_id": "00000000-0000-4000-8000-000000000001",
+    "self_reported": true,
+    "provenance": "UNVERIFIED_SELF_REPORT"
+  },
+  "toy_business": {
+    "description": "the only 'business' this copy performs: write one fixed text file, once",
+    "fixed_text": "SYNTHETIC_RESULT_OK",
+    "result_rel_path": "state/RESULT.txt",
+    "reserved_child_exit_code": 43
+  },
+  "budgets": {
+    "reserve_max_attempts": 2,
+    "resume_max_attempts": 2,
+    "lease_seconds": 120,
+    "deadline_seconds": 900,
+    "replies_max": 1
+  },
+  "sample_targets": {
+    "mail_recipient": "synthetic-recipient@example.invalid",
+    "wake_target": "SYNTHETIC-SESSION-PLACEHOLDER",
+    "schedule_at_utc": "2099-01-01T00:00:00Z"
+  },
+  "idempotency": {
+    "result_key": "RES-RUN-SYNTHETIC-0001-TASK-SYNTHETIC-0001",
+    "intent_id": "M-SYNTHETIC-0001"
+  }
+}

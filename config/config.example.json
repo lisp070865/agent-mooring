@@ -1,0 +1,32 @@
+{
+  "schema": "awake_kit_config_v1",
+  "_comment": "Empty by default. Copy to config.json, then fill exactly what you intend to enable. Nothing here is auto-discovered and no value is read from the environment.",
+  "allow_network": false,
+  "adapters": {
+    "mail": {
+      "enabled": false,
+      "endpoint": "",
+      "inbox": "",
+      "recipient": ""
+    },
+    "wake": {
+      "enabled": false,
+      "target_session": ""
+    },
+    "schedule": {
+      "enabled": false,
+      "kind": "",
+      "at": ""
+    }
+  },
+  "limits": {
+    "max_resume_attempts": 2,
+    "deadline_seconds": 900,
+    "lease_seconds": 120
+  },
+  "_notes": {
+    "identity": "holder_id must be an explicitly issued uuid4 from the executor. A mailbox, alias, message id, thread id, directory name, window title, or 'most recently active' value is not an identity and will be rejected.",
+    "no_persistent_access": "This package never writes a token, cookie, credential, or reusable access grant anywhere.",
+    "network_double_gate": "An adapter fires only if adapters.<name>.enabled is true AND allow_network is true AND its own settings are non-empty; otherwise it raises NetworkDisabledError with a named reason."
+  }
+}

@@ -1,0 +1,32 @@
+# Minimal project metadata for the candidate copy.
+# License: MIT, with the attribution in the LICENSE file, decided by the project owner.
+# No `license` field is set here yet; that metadata addition was explicitly deferred.
+# There is no third-party dependency, so there is no dependency table to fill.
+
+[project]
+name = "awake-kit"
+version = "0.1.0-candidate"
+description = "Minimal, offline, generic control-loop primitives: exclusive claim/lease, checkpointed resume, immutable single-commit results, unknown-outcome no-resend policy."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+  "Intended Status :: Candidate, Not Yet Released",
+]
+
+[project.urls]
+# No public URLs: the work lives in a private preparation repository and this candidate
+# has not been published from it.
+
+[build-system]
+# Intentionally unspecified until release engineering decides the packaging route; this
+# is not a licensing blocker, since the licence and attribution are settled in LICENSE.
+
+[tool.awake_kit]
+status = "CANDIDATE_NOT_RELEASED"
+network_adapters = "disabled_by_default"
+offline_test_entry = "tools/run_offline_tests.py"
+manifest_entry = "tools/build_manifest.py"
+sensitive_scan_entry = "tools/scan_candidate.py"
