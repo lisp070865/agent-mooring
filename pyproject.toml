@@ -17,8 +17,8 @@ classifiers = [
 ]
 
 [project.urls]
-# No public URLs: the work lives in a private preparation repository and this candidate
-# has not been published from it.
+# R43 candidate source was published on GitHub on 2026-10-23; no URL metadata is added here.
+# Source publication is not a formal package release; CANDIDATE_NOT_RELEASED is unchanged.
 
 [build-system]
 # Intentionally unspecified until release engineering decides the packaging route; this

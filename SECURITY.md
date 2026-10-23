@@ -63,8 +63,9 @@ Nothing in this package can reach the outside world as shipped.
 
 ## Reporting
 
-This candidate is kept in a private preparation repository and is **not publicly
-published**, so there is no public issue tracker or security address to point at yet.
-Do not open an issue against a repository that is not public; the licence and
-attribution are recorded in `LICENSE`, and the unresolved provenance
-questions are listed in `PROVENANCE.md`.
+The R43 candidate source was published on GitHub on 2026-10-23. No dedicated private
+security-reporting channel is configured or documented for this project yet. Do not
+post vulnerability details, credentials, or other sensitive information in public
+issues or discussions. Wait for an explicitly identified private reporting channel
+before sharing sensitive details. The licence and attribution are recorded in
+`LICENSE`, and unresolved provenance questions are listed in `PROVENANCE.md`.

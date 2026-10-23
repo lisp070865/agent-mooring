@@ -1,4 +1,4 @@
-# AgentMooring — minimal control-loop primitives (candidate, not yet published)
+# AgentMooring — minimal control-loop primitives (published candidate source)
 
 Public project name: **AgentMooring**. The importable package is still `awake_kit`
 (`src/awake_kit/`, project name `awake-kit`): renaming code, tests, or configuration was
@@ -10,10 +10,11 @@ claim a unit of work, die in the middle, and be resumed **without** doing that
 work twice, **without** talking to anybody it wasn't told to, and **without**
 deciding on its own that a timeout means "retry".
 
-This is a **candidate** for open-source release. It ships generic code, synthetic
+This is **published candidate source**, not a production or package release. It ships generic code, synthetic
 example data, and an empty configuration. All outward-facing adapters are disabled
 by default. It is not a production agent runtime, not a scheduler, and not a
-mailbox client. It has not been published. The project owner has chosen the MIT licence
+mailbox client. The R43 candidate source was published on GitHub on 2026-10-23.
+The project owner has chosen the MIT licence
 and the attribution name recorded in `LICENSE`; choosing a licence is the owner's
 decision about *this* package and is not a warranty that the rights of everything its
 design drew on have been cleared — see `PROVENANCE.md`.
@@ -102,10 +103,12 @@ silently acquire network behaviour.
 
 ## Status
 
-`CANDIDATE_NOT_RELEASED`. A private preparation repository exists for this work; this
-candidate has not been published from it, and nothing has been pushed publicly. The
-licence and attribution were set by the project owner (`LICENSE`); the
-open questions listed in `PROVENANCE.md` are not closed by that act.
+The **R43 candidate source was published on GitHub on 2026-10-23**. This is source
+publication, not production acceptance, a package release, or a new test run.
+`CANDIDATE_NOT_RELEASED` remains the package metadata status: public source availability
+does not constitute a formal package release. The licence and attribution were set by
+the project owner (`LICENSE`); publication does not close the open questions in
+`PROVENANCE.md`.
 
 Two kinds of evidence are deliberately kept apart:
 
@@ -118,5 +121,5 @@ Two kinds of evidence are deliberately kept apart:
   or mutation run was re-executed in this round**, so the numbers above remain
   self-reported rather than independently reproduced.
 
-Packaging this candidate is not publication, not production acceptance, and not a
+Publishing this candidate source is not production acceptance, a package release, or a
 guarantee that every right needed for release has been cleared.
